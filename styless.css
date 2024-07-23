@@ -565,6 +565,7 @@ input[type="submit"]:hover {
   gap: 1vh;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2vh;
 }
 
 .gallery h1{
