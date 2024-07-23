@@ -555,6 +555,88 @@ input[type="submit"]:hover {
   color:red;
 }
 
+.gallery{
+  width: 100%;
+  height: max-content;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery h1{
+  color: gray;
+}
+
+.gallery_container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryimg{
+  width: 300px;
+  height: 250px;
+  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 700ms ease-in-out;
+}
+
+.galleryimg:hover{
+  scale: 1.2;
+  transform: translateY(-20px);
+  border-radius: 30px;
+}
+
+.galleryimg.tr1{
+  background-image: url(./tr1.jpeg);
+}
+
+.galleryimg.tr2{
+  background-image: url(./tr2.jpeg);
+}
+
+.galleryimg.tr3{
+  background-image: url(./tr3.jpeg);
+}
+
+.galleryimg.tr4{
+  background-image: url(./tr4.jpeg);
+}
+
+.galleryimg.tr5{
+  background-image: url(./tr5.jpeg);
+}
+
+.galleryimg.tr6{
+  background-image: url(./tr6.jpeg);
+}
+
+.galleryimg.meet1{
+  background-image: url(./meet1.jpeg);
+}
+
+.galleryimg.meet2{
+  background-image: url(./meet2.jpeg);
+}
+
+.galleryimg.meet3{
+  background-image: url(./meet3.jpeg);
+}
+
+.galleryimg.meet4{
+  background-image: url(./meet4.jpeg);
+}
+
+
 .donation{
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;;
