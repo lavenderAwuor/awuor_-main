@@ -1,3 +1,6 @@
 deployment:
   tasks:
     - /bin/cp -r * /home/maawidow/public_html/
+    - echo "Files in public_html after deploy:"
+    - ls -la /home/maawidow/public_html/
+    - echo "Deployment completed successfully."

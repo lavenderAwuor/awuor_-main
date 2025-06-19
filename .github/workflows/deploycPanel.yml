@@ -1,3 +1,0 @@
-deployment:
-  tasks:
-    - /bin/cp -r * /home/maawidow/public_html/
