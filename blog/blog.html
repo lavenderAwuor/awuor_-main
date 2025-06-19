@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAA Widows & OVC Blogs</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .blog-card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(255, 0, 0, 0.1);
+            margin-bottom: 40px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-content {
+            padding: 30px;
+        }
+
+        .blog-date {
+            color: #ff4444;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .blog-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid #ff4444;
+            padding-bottom: 10px;
+        }
+
+        .blog-text {
+            color: #cccccc;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .blog-text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .blog-text li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .blog-text li:before {
+            content: "•";
+            color: #ff4444;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+        }
+
+        .blog-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .blog-images img {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-images img:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .blog-images {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <article class="blog-card">
+            <div class="blog-content">
+                <div class="blog-date">June 2024</div>
+                <h2 class="blog-title">MAA Widows and OVC Marks One Year in Office</h2>
+                <div class="blog-text">
+                    <p>We were honored to be hosted by Angie Murriet on Sidai FM for a special conversation highlighting the plight and challenges facing widows in the community.</p>
+                    
+                    <p>The CEO Nelly Koonyo was joined by Beatrice Yenko, a courageous widow who shared her powerful testimony. After being chased from her land and her home demolished, Beatrice stood firm - and through the support of MAA widows, she successfully reclaimed her land and dignity.</p>
+                    
+                    <p>This conversation served as a scorecard for MAA widows showcasing:</p>
+                    <ul>
+                        <li>The struggles widows continue to face</li>
+                        <li>Our ongoing vision to fight disinheritance and protect the rights of widows</li>
+                    </ul>
+                    
+                    <p>We thank Sidai FM and Angie for creating space for this critical dialogue and we recommit ourselves to ensuring no widow is left behind.</p>
+                </div>
+                <div class="blog-images">
+                    <img src="./images/blog1-image1.jpg" alt="MAA Widows Radio Interview" />
+                    <img src="./images/blog1-image2.jpg" alt="Beatrice Yenko Testimony" />
+                </div>
+            </div>
+        </article>
+        
+        <article class="blog-card">
+            <div class="blog-content">
+                <div class="blog-date">June 2024</div>
+                <h2 class="blog-title">MAA Widows Advocates for Gender Equality and Reproductive Health Rights</h2>
+                <div class="blog-text">
+                    <p>MAA widows continues to collaborate with other stakeholders in advancing gender equality and reproductive health rights. Our team made a powerful presentation during the dissemination meeting hosted by WE World.</p>
+                    
+                    <p>The meeting focused on sharing critical findings regarding:</p>
+                    <ul>
+                        <li>Knowledge, attitudes and practices related to reproductive health rights</li>
+                        <li>Current gender norms in the community</li>
+                        <li>The state of gender-based violence in Narok</li>
+                    </ul>
+                    
+                    <p>This collaboration strengthens our commitment to addressing both social and health challenges facing widows in our community.</p>
+                </div>
+                <div class="blog-images">
+                    <img src="./images/blog2-image1.jpg" alt="MAA Widows Presentation at WE World Meeting" />
+                    <img src="./images/blog2-image2.jpg" alt="Stakeholders Discussion Session" />
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

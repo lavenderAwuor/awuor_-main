@@ -1,0 +1,36 @@
+
+/* Gallery Section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Gallery image backgrounds */
+.gallery-item.tr1 { background-image: url('../tr1.jpeg'); }
+.gallery-item.tr2 { background-image: url('../tr2.jpeg'); }
+.gallery-item.tr3 { background-image: url('../tr3.jpeg'); }
+.gallery-item.tr4 { background-image: url('../tr4.jpeg'); }
+.gallery-item.tr5 { background-image: url('../tr5.jpeg'); }
+.gallery-item.tr6 { background-image: url('../tr6.jpeg'); }
+.gallery-item.meet1 { background-image: url('../meet1.jpeg'); }
+.gallery-item.meet2 { background-image: url('../meet2.jpeg'); }
+.gallery-item.meet3 { background-image: url('../meet3.jpeg'); }
+.gallery-item.meet4 { background-image: url('./meet4.jpeg'); }

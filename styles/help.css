@@ -1,0 +1,68 @@
+
+/* Help Section */
+.help-section {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.help-section .section-title,
+.help-section .section-subtitle {
+  color: white;
+}
+
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.help-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.help-icon {
+  font-size: 3rem;
+  color: #dc143c;
+  margin-bottom: 1.5rem;
+}
+
+.help-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.help-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.help-link {
+  color: #dc143c;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.help-link:hover {
+  background: #dc143c;
+  color: white;
+  transform: translateY(-2px);
+}
