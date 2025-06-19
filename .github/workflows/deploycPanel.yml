@@ -1,19 +1,33 @@
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/maawidow/public_html/
-    - export BACKUPPATH=/home/maawidow/backups/backup_$(date +%Y%m%d_%H%M%S)
+name: Deploy to cPanel
 
-    - echo "📁 Creating backup directory at $BACKUPPATH"
-    - mkdir -p "$BACKUPPATH"
+on:
+  push:
+    branches:
+      - main
 
-    - echo "📦 Backing up current site from $DEPLOYPATH to $BACKUPPATH"
-    - cp -r "$DEPLOYPATH"* "$BACKUPPATH"
-    - echo "✅ Backup complete"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-    - echo "🚀 Deploying new files to $DEPLOYPATH"
-    - /bin/cp -r * "$DEPLOYPATH"
-    - echo "✅ Deployment complete"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - echo "📂 Listing deployed files in $DEPLOYPATH:"
-    - ls -la "$DEPLOYPATH"
-    - echo "📂 Listing backup files in $BACKUPPATH:"
+      - name: Set deploy and backup paths
+        run: |
+          export DEPLOYPATH=/home/maawidow/public_html/
+          export BACKUPPATH=/home/maawidow/backups/backup_$(date +%Y%m%d_%H%M%S)
+          echo "DEPLOYPATH=$DEPLOYPATH" >> $GITHUB_ENV
+          echo "BACKUPPATH=$BACKUPPATH" >> $GITHUB_ENV
+
+      - name: Create backup directory
+        run: mkdir -p $BACKUPPATH
+
+      - name: Backup current site
+        run: cp -r $DEPLOYPATH* $BACKUPPATH
+
+      - name: Deploy new files
+        run: cp -r * $DEPLOYPATH
+
+      - name: List deployed files
+        run: ls -la $DEPLOYPATH
